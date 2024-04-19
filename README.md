@@ -14,3 +14,15 @@
 - Turn RTDB OFF
 - Turn RTDB ON
 - Retrieves data [FAILS]
+
+### How to use
+1. Setup and run [Firebase emulators]([https://firebase.google.com/docs/emulator-suite/install_and_configure)
+ ```
+   firebase init emulators
+   firebase emulators:start
+```
+2. Run issue570 app
+3. Click first button.
+- Log should appear that data even if it's null e.g. `Got value null`
+4. Click second button.
+- Returns error cannot reconnect. `com.google.firebase.database.tubesock.WebSocketException`
