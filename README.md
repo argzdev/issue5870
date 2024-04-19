@@ -22,7 +22,7 @@
    firebase emulators:start
 ```
 2. Run issue570 app
-3. Click first button.
-- Log should appear that data even if it's null e.g. `Got value null`
-4. Click second button.
-- Returns error cannot reconnect. `com.google.firebase.database.tubesock.WebSocketException`
+3. Click first button. (Retrieve data after connecting to local db)
+- SUCCEEDS - Log should appear that data is retrieved even if it's null e.g. `Got value null`
+4. Click second button.(Retrieve data after disconnecting and connecting to local db)
+- FAILS - Returns error cannot reconnect. `com.google.firebase.database.tubesock.WebSocketException`
